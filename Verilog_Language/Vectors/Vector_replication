@@ -1,0 +1,10 @@
+//Description: Replicating the 8-bit input to 32-out output
+
+module top_module (
+    input [7:0] in,
+    output [31:0] out );//
+
+    // assign out = { replicate-sign-bit , the-input };
+    assign out={{24{in[7]}},in};
+
+endmodule
