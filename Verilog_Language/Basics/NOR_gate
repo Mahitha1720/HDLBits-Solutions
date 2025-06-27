@@ -1,4 +1,4 @@
-//Description: Implementing the NOR gate
+//Description: Implementing the NOR gate using Gate-level modelling
 
 module top_module( 
     input a, 
