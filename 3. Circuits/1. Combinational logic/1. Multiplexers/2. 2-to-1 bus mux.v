@@ -1,0 +1,13 @@
+module top_module( 
+    input [99:0] a, b,
+    input sel,
+    output [99:0] out );
+    
+    always @(*) begin
+        case(sel)
+            1'b0: out[99:0]=a[99:0];
+            1'b1: out[99:0]=b[99:0];
+        endcase
+    end
+
+endmodule
